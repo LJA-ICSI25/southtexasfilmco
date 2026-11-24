@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>South Texas Film Company</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#home" aria-label="South Texas Film Company home"
+        ><img data-logo alt="South Texas Film Company"
+      /></a>
+      <div class="scrim"></div>
+      <nav class="tabs" id="tabs" aria-label="Main">
+        <button class="x" type="button">Close</button
+        ><a href="#productions" data-v="productions">Productions</a
+        ><a href="#pricing" data-v="pricing">Pricing</a
+        ><a href="#story" data-v="story">Our story</a
+        ><a href="#crew" data-v="crew">Our crew</a>
+      </nav>
+      <a class="btn solid big" href="#contact">Contact</a
+      ><button
+        class="mb"
+        id="mb"
+        type="button"
+        aria-label="Menu"
+        aria-expanded="false"
+        aria-controls="tabs"
+      ></button>
+    </header>
+    <main>
+      <div id="v-home">
+        <div class="hero">
+          <div class="wrap">
+            <h1>South Texas Film Company</h1>
+            <p>
+              We make commercials, brand films, and photography for businesses
+              that want to be seen.
+            </p>
+            <div class="btns">
+              <a class="btn solid" href="#productions">View productions</a
+              ><a class="btn" href="#contact">Get in touch</a>
+            </div>
+          </div>
+        </div>
+        <section>
+          <div class="wrap">
+            <div class="sh">
+              <h2>Featured work</h2>
+              <a href="#productions">View all productions</a>
+            </div>
+            <div id="feat"></div>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h2>What we do</h2>
+            <div class="cards">
+              <div class="card">
+                <h3>Brand films and commercials</h3>
+                <p>Story-driven spots for web, social, and broadcast.</p>
+              </div>
+              <div class="card">
+                <h3>Corporate and investor video</h3>
+                <p>Clear, polished films that make the pitch land.</p>
+              </div>
+              <div class="card">
+                <h3>PSA and Service videos</h3>
+                <p>Public service annoncement videos for our community.</p>
+              </div>
+              <div class="card">
+                <h3>Photography</h3>
+                <p>Portraits, products, spaces, and events.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="wrap cta">
+            <h2>Have a project in mind?</h2>
+            <p>
+              Tell us what you’re making and when you need it. We’ll reply with
+              next steps.
+            </p>
+            <div class="btns">
+              <a class="btn solid big" href="#contact">Contact us</a
+              ><a
+                class="btn big"
+                href="https://www.instagram.com/southtexasfilmcompany/"
+                target="_blank"
+                rel="noopener"
+                >@southtexasfilmcompany</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="v-productions" hidden>
+        <div class="wrap">
+          <h2>Productions</h2>
+          <div id="grid"></div>
+        </div>
+      </section>
+      <section id="v-pricing" hidden>
+        <div class="wrap">
+          <h2>Pricing</h2>
+          <p class="pricing-intro">
+            Start with the kind of help you need. We’ll shape the details and
+            pricing around your project.
+          </p>
+          <div class="pricing-browser">
+            <div
+              class="price-tabs"
+              id="price-tabs"
+              role="group"
+              aria-label="Choose a service"
+            ></div>
+            <div class="price-panel" id="price-panel" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+      <section id="v-story" hidden>
+        <div class="wrap">
+          <h2>Our story</h2>
+          <p>
+            South Texas Film Company tells stories the way the region lives
+            them: big skies, real people, and details you can feel.
+          </p>
+          <p>
+            We plan, shoot, and finish every project with one goal, work you’re
+            proud to put in front of customers and investors.
+          </p>
+        </div>
+      </section>
+      <section id="v-crew" hidden>
+        <div class="wrap">
+          <h2>Our crew (NOTE TO SELF, ASK DECLAN ABOUT ROLES PER PERSON)</h2>
+          <div class="cards" id="crew"></div>
+        </div>
+      </section>
+      <section id="v-contact" hidden>
+        <div class="wrap">
+          <h2>Contact us</h2>
+          <p>
+            Tell us about your project and when you need it. We’ll reply with
+            next steps.
+          </p>
+          <div class="btns">
+            <a
+              class="btn solid big"
+              href="mailto:southtexasfilmcompany@gmail.com?subject=New%20project"
+              >Email us</a
+            ><a
+              class="btn big"
+              href="https://www.instagram.com/southtexasfilmcompany/"
+              target="_blank"
+              rel="noopener"
+              >Instagram: @southtexasfilmcompany</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img data-logo alt="South Texas Film Company" /><span
+        >© 2026 South Texas Film Company</span
+      >
+    </footer>
+    <dialog id="lb" aria-label="Production viewer">
+      <div class="stage"></div>
+      <div class="bar">
+        <b class="cp"></b>
+        <div>
+          <button class="btn" id="pv">Previous</button
+          ><button class="btn" id="nx">Next</button
+          ><button class="btn" id="cl">Close</button>
+        </div>
+      </div>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
